@@ -1,0 +1,103 @@
+/* Reset CSS en utilisant rem */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px pour une conversion plus facile */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 1.6rem/1.5 sans-serif; /* Taille de base 16px avec interligne 1.5 */
+    color: #333;
+    background-color: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+h1 { font-size: 2.4rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.6rem; }
+h6 { font-size: 1.4rem; }
+
+p {
+    font-size: 1.6rem;
+}
+
+img, video, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: disc; /* Puces par défaut */
+}
+
+ol {
+    list-style-type: decimal; /* Numérotation par défaut */
+}
+
+li {
+    margin-left: 2rem; /* Décalage pour la lisibilité */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+blockquote {
+    margin: 0;
+    padding: 1rem;
+    border-left: 0.4rem solid #ccc;
+    font-style: italic;
+}
+
+figure {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+ul,ol,li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+:focus {
+    outline: 0.2rem solid #000; /* Ajoute un focus visible pour l'accessibilité */
+}

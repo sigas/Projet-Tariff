@@ -1,0 +1,115 @@
+@import url(reset.css);
+/* Importation de la police inspirée de Jurassic Park */
+
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+:root {
+  --background: #1a3c1d; /* Vert jungle */
+  --text: #f0e68c; /* Jaune vieilli */
+  --accent: #8b4513; /* Marron terreux */
+  --hover: #d62828; /* Rouge sang de raptor */
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 1.6rem/1.5 "Staatliches", sans-serif;
+  background: var(--background);
+  color: var(--text);
+  text-align: center;
+  padding: 2rem;
+}
+
+header {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/Jurassic_Park_logo.svg")
+    no-repeat center;
+  background-size: contain;
+  height: 15rem;
+}
+
+h1,
+h2 {
+  color: var(--accent);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+li {
+  background: var(--accent);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 0 10px var(--hover);
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  border: 3px solid var(--hover);
+}
+
+figcaption {
+  margin-top: 1rem;
+}
+
+figcaption h2 {
+  font-size: 2rem;
+  color: var(--hover);
+}
+
+figcaption ul {
+  padding: 0;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--accent);
+  color: var(--text);
+  border-radius: 1rem;
+}
